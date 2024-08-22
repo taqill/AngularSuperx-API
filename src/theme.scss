@@ -1,0 +1,70 @@
+@use "@angular/material" as mat;
+@include mat.core();
+
+// Define typography configuration (adjust as needed)
+$typography-config: mat.define-typography-config(
+  $font-family: '"Poppins", "Noto Sans Thai", sans-serif',
+  $headline-1: mat.define-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
+  $headline-2: mat.define-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
+  $headline-3: mat.define-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
+  $headline-4: mat.define-typography-level(34px, 40px, 400),
+  $headline-5: mat.define-typography-level(24px, 32px, 400),
+  $headline-6: mat.define-typography-level(20px, 32px, 400),
+  $subtitle-1: mat.define-typography-level(16px, 28px, 400),
+  $body-1: mat.define-typography-level(14px, 20px, 400),
+  $body-2: mat.define-typography-level(14px, 20px, 400),
+  $subtitle-2: mat.define-typography-level(16px, 28px, 400),
+  $caption: mat.define-typography-level(12px, 20px, 400),
+  $button: mat.define-typography-level(14px, 14px, 500),
+);
+
+// Define color palettes for Custom Theme
+$custom-primary: mat.define-palette(
+  mat.define-palette(
+    mat.$blue-palette,
+    800,
+    900,
+    A100
+  ),
+  800,
+  900,
+  A100
+);
+$custom-accent: mat.define-palette(
+  mat.define-palette(
+    mat.$cyan-palette,
+    500,
+    600,
+    400
+  ),
+  500,
+  600,
+  400
+);
+$custom-warn: mat.define-palette(
+  mat.define-palette(
+    mat.$red-palette,
+    900,
+    800,
+    400
+  ),
+  900,
+  800,
+  400
+);
+
+// Define the Custom Theme
+$custom-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $custom-primary,
+      accent: $custom-accent,
+      warn: $custom-warn,
+    ),
+    typography: $typography-config,
+    density: 0,
+  )
+);
+
+// Include the theme for all Angular Material components
+@include mat.all-component-themes($custom-theme);

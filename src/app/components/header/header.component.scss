@@ -1,0 +1,35 @@
+.blink {
+    animation: blink-animation 1s infinite;
+  }
+
+  @keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .status-indicator {
+    width: 5px;
+    height: 5px;
+    border-radius: 20%;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  .profile-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-status {
+    position: absolute;
+    top: -5px; /* Adjust as needed */
+    right: -5px; /* Adjust as needed */
+    width: 13px; /* Adjust size as needed */
+    height: 13px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 1px solid white; /* Optional: add a border to make it more visible */
+    background-color: green; /* Default color */
+    animation: blink-animation 1s infinite; /* Add animation */
+  }
+  

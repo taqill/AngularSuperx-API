@@ -1,0 +1,51 @@
+<mat-toolbar color="primary" class="flex flex-row">
+    <mat-toolbar-row>
+      <!-- toggle button -->
+      <button *ngIf="isOpened" mat-icon-button (click)="onToggleSidenav()" aria-label="Menu Toggle">
+        <mat-icon style="color: white;">menu</mat-icon>
+      </button>
+  
+      <div class="mat-body1"></div>
+  
+      <!-- center title -->
+      <div style="flex: 0.9"></div>
+      <div class="mat-body2" style="color: whitesmoke; font-weight: bold; font-size: 25px">
+        {{ pageName }}
+      </div>
+      <div style="flex: 1"></div>
+  
+      <div class="flex flex-col my-2 text-end">
+
+  
+        <!-- Profile info -->
+        <span class="text-sm line-clamp-1" style="color: whitesmoke; font-weight: bold; font-size: 15px ">{{ userProfile.username }} ({{ userProfile.role}})</span>
+        <span class="text-sm line-clamp-1" style="color: whitesmoke;">{{ userProfile.email }}</span>
+      </div>
+  
+      <!-- logout button -->
+      <div class="mt-2 relative">
+        <!-- Profile picture with status indicator -->
+        <div class="profile-container">
+          <div [ngStyle]="{'background-color': statusColor}" class="status-indicator profile-status"></div>
+          <button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="bg-transparent border-none cursor-pointer">
+            <img height="40" width="40" [src]="'assets/images/Ghost.jpg'" alt="Ghost Scary" class="rounded-full" />
+          </button>
+        </div>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="onClickUserProfile()">
+            <mat-icon>person</mat-icon>
+            <span>แก้ไขโปรไฟล์</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>settings</mat-icon>
+            <span>ตั้งค่า</span>
+          </button>
+          <button mat-menu-item (click)="onClickSignout()">
+            <mat-icon>lock</mat-icon>
+            <span>ออกจากระบบ</span>
+          </button>
+        </mat-menu>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
