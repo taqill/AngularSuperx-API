@@ -6467,7 +6467,7 @@
       "format": "esm"
     },
     "src/environments/environment.ts": {
-      "bytes": 237,
+      "bytes": 229,
       "imports": [],
       "format": "esm"
     },
@@ -28297,24 +28297,6 @@
       ],
       "format": "esm"
     },
-    "src/app/components/register/register.component.scss": {
-      "bytes": 568,
-      "imports": [
-        {
-          "path": "/assets/images/bg_angular.jpg",
-          "kind": "url-token",
-          "external": true
-        }
-      ]
-    },
-    "src/app/components/menu/menu.component.scss": {
-      "bytes": 338,
-      "imports": []
-    },
-    "src/app/components/header/header.component.scss": {
-      "bytes": 774,
-      "imports": []
-    },
     "src/app/components/login/login.component.scss": {
       "bytes": 565,
       "imports": [
@@ -28325,11 +28307,19 @@
         }
       ]
     },
-    "src/app/components/create-product-dialog/create-product-dialog.component.scss": {
-      "bytes": 115,
+    "src/app/app.component.scss": {
+      "bytes": 273,
+      "imports": []
+    },
+    "src/app/components/menu/menu.component.scss": {
+      "bytes": 338,
       "imports": []
     },
     "src/app/components/edit-product-dialog/edit-product-dialog.component.scss": {
+      "bytes": 115,
+      "imports": []
+    },
+    "src/app/components/create-product-dialog/create-product-dialog.component.scss": {
       "bytes": 115,
       "imports": []
     },
@@ -28337,8 +28327,18 @@
       "bytes": 936,
       "imports": []
     },
-    "src/app/app.component.scss": {
-      "bytes": 273,
+    "src/app/components/register/register.component.scss": {
+      "bytes": 568,
+      "imports": [
+        {
+          "path": "/assets/images/bg_angular.jpg",
+          "kind": "url-token",
+          "external": true
+        }
+      ]
+    },
+    "src/app/components/header/header.component.scss": {
+      "bytes": 774,
       "imports": []
     },
     "node_modules/zone.js/fesm2015/zone.js": {
@@ -28381,7 +28381,7 @@
     }
   },
   "outputs": {
-    "main-QIS2C4LX.js": {
+    "main-727TRLSE.js": {
       "imports": [
         {
           "path": "chunk-7RV22KDK.js",
@@ -28482,7 +28482,7 @@
           "bytesInOutput": 8436
         },
         "src/environments/environment.ts": {
-          "bytesInOutput": 190
+          "bytesInOutput": 182
         },
         "src/app/services/user.service.ts": {
           "bytesInOutput": 498
@@ -28950,7 +28950,7 @@
           "bytesInOutput": 37
         }
       },
-      "bytes": 1880484
+      "bytes": 1880476
     },
     "chunk-H56SK2GW.js": {
       "imports": [
@@ -30246,42 +30246,6 @@
       "inputs": {},
       "bytes": 1429
     },
-    "register.component-ZOO2OJSE.css": {
-      "imports": [
-        {
-          "path": "/assets/images/bg_angular.jpg",
-          "kind": "url-token",
-          "external": true
-        }
-      ],
-      "inputs": {
-        "src/app/components/register/register.component.scss": {
-          "bytesInOutput": 453
-        }
-      },
-      "bytes": 454,
-      "ng-component": true
-    },
-    "menu.component-PDEXWVJF.css": {
-      "imports": [],
-      "inputs": {
-        "src/app/components/menu/menu.component.scss": {
-          "bytesInOutput": 252
-        }
-      },
-      "bytes": 253,
-      "ng-component": true
-    },
-    "header.component-7BYEUYEI.css": {
-      "imports": [],
-      "inputs": {
-        "src/app/components/header/header.component.scss": {
-          "bytesInOutput": 446
-        }
-      },
-      "bytes": 447,
-      "ng-component": true
-    },
     "login.component-NQMZYT7E.css": {
       "imports": [
         {
@@ -30298,20 +30262,40 @@
       "bytes": 451,
       "ng-component": true
     },
-    "create-product-dialog.component-R35W4EQW.css": {
+    "app.component-73ZZW55M.css": {
       "imports": [],
       "inputs": {
-        "src/app/components/create-product-dialog/create-product-dialog.component.scss": {
-          "bytesInOutput": 82
+        "src/app/app.component.scss": {
+          "bytesInOutput": 219
         }
       },
-      "bytes": 83,
+      "bytes": 220,
+      "ng-component": true
+    },
+    "menu.component-PDEXWVJF.css": {
+      "imports": [],
+      "inputs": {
+        "src/app/components/menu/menu.component.scss": {
+          "bytesInOutput": 252
+        }
+      },
+      "bytes": 253,
       "ng-component": true
     },
     "edit-product-dialog.component-Z46XJCK5.css": {
       "imports": [],
       "inputs": {
         "src/app/components/edit-product-dialog/edit-product-dialog.component.scss": {
+          "bytesInOutput": 82
+        }
+      },
+      "bytes": 83,
+      "ng-component": true
+    },
+    "create-product-dialog.component-R35W4EQW.css": {
+      "imports": [],
+      "inputs": {
+        "src/app/components/create-product-dialog/create-product-dialog.component.scss": {
           "bytesInOutput": 82
         }
       },
@@ -30328,14 +30312,30 @@
       "bytes": 557,
       "ng-component": true
     },
-    "app.component-73ZZW55M.css": {
-      "imports": [],
+    "register.component-ZOO2OJSE.css": {
+      "imports": [
+        {
+          "path": "/assets/images/bg_angular.jpg",
+          "kind": "url-token",
+          "external": true
+        }
+      ],
       "inputs": {
-        "src/app/app.component.scss": {
-          "bytesInOutput": 219
+        "src/app/components/register/register.component.scss": {
+          "bytesInOutput": 453
         }
       },
-      "bytes": 220,
+      "bytes": 454,
+      "ng-component": true
+    },
+    "header.component-7BYEUYEI.css": {
+      "imports": [],
+      "inputs": {
+        "src/app/components/header/header.component.scss": {
+          "bytesInOutput": 446
+        }
+      },
+      "bytes": 447,
       "ng-component": true
     },
     "polyfills-SCHOHYNV.js": {
