@@ -6467,7 +6467,7 @@
       "format": "esm"
     },
     "src/environments/environment.ts": {
-      "bytes": 233,
+      "bytes": 237,
       "imports": [],
       "format": "esm"
     },
@@ -28297,8 +28297,8 @@
       ],
       "format": "esm"
     },
-    "src/app/components/login/login.component.scss": {
-      "bytes": 565,
+    "src/app/components/register/register.component.scss": {
+      "bytes": 568,
       "imports": [
         {
           "path": "/assets/images/bg_angular.jpg",
@@ -28311,8 +28311,12 @@
       "bytes": 338,
       "imports": []
     },
-    "src/app/components/register/register.component.scss": {
-      "bytes": 568,
+    "src/app/components/header/header.component.scss": {
+      "bytes": 774,
+      "imports": []
+    },
+    "src/app/components/login/login.component.scss": {
+      "bytes": 565,
       "imports": [
         {
           "path": "/assets/images/bg_angular.jpg",
@@ -28320,10 +28324,6 @@
           "external": true
         }
       ]
-    },
-    "src/app/components/header/header.component.scss": {
-      "bytes": 774,
-      "imports": []
     },
     "src/app/components/create-product-dialog/create-product-dialog.component.scss": {
       "bytes": 115,
@@ -28381,7 +28381,7 @@
     }
   },
   "outputs": {
-    "main-QU7CXSY6.js": {
+    "main-QIS2C4LX.js": {
       "imports": [
         {
           "path": "chunk-7RV22KDK.js",
@@ -28482,7 +28482,7 @@
           "bytesInOutput": 8436
         },
         "src/environments/environment.ts": {
-          "bytesInOutput": 186
+          "bytesInOutput": 190
         },
         "src/app/services/user.service.ts": {
           "bytesInOutput": 498
@@ -28950,7 +28950,7 @@
           "bytesInOutput": 37
         }
       },
-      "bytes": 1880480
+      "bytes": 1880484
     },
     "chunk-H56SK2GW.js": {
       "imports": [
@@ -30246,32 +30246,6 @@
       "inputs": {},
       "bytes": 1429
     },
-    "login.component-NQMZYT7E.css": {
-      "imports": [
-        {
-          "path": "/assets/images/bg_angular.jpg",
-          "kind": "url-token",
-          "external": true
-        }
-      ],
-      "inputs": {
-        "src/app/components/login/login.component.scss": {
-          "bytesInOutput": 450
-        }
-      },
-      "bytes": 451,
-      "ng-component": true
-    },
-    "menu.component-PDEXWVJF.css": {
-      "imports": [],
-      "inputs": {
-        "src/app/components/menu/menu.component.scss": {
-          "bytesInOutput": 252
-        }
-      },
-      "bytes": 253,
-      "ng-component": true
-    },
     "register.component-ZOO2OJSE.css": {
       "imports": [
         {
@@ -30288,6 +30262,16 @@
       "bytes": 454,
       "ng-component": true
     },
+    "menu.component-PDEXWVJF.css": {
+      "imports": [],
+      "inputs": {
+        "src/app/components/menu/menu.component.scss": {
+          "bytesInOutput": 252
+        }
+      },
+      "bytes": 253,
+      "ng-component": true
+    },
     "header.component-7BYEUYEI.css": {
       "imports": [],
       "inputs": {
@@ -30296,6 +30280,22 @@
         }
       },
       "bytes": 447,
+      "ng-component": true
+    },
+    "login.component-NQMZYT7E.css": {
+      "imports": [
+        {
+          "path": "/assets/images/bg_angular.jpg",
+          "kind": "url-token",
+          "external": true
+        }
+      ],
+      "inputs": {
+        "src/app/components/login/login.component.scss": {
+          "bytesInOutput": 450
+        }
+      },
+      "bytes": 451,
       "ng-component": true
     },
     "create-product-dialog.component-R35W4EQW.css": {
